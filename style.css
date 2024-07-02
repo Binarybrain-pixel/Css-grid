@@ -1,0 +1,87 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+
+}
+
+.child{
+    background-color: gray;
+    text-align: center;
+    color: white;
+
+}
+
+.child-1{
+    grid-column: 1/5;
+    height: 61px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+
+
+/* taget nav left side  */
+.logo a{
+    text-decoration: none;
+    color: aqua;
+    font-weight: bold;
+    font-family: "Oxygen", sans-serif;
+    font-size: 34px;
+}
+
+ul {
+    display: flex;
+       
+
+}
+
+/* nav right side  */
+ul li {
+    list-style: none;
+    font-size: 18px;
+    display: flex;
+    
+   
+    
+}
+
+ul li a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: aqua;
+    font-family: "Oxygen", sans-serif;
+
+}
+
+.child-2 {
+    grid-column: span 3;
+    grid-row: 2/3;
+    
+
+}
+
+.child-3{
+    grid-row: 3/5;
+    height: 100%;
+}
+
+
+
+
